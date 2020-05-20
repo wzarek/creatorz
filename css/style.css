@@ -1,0 +1,288 @@
+body * {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    ;
+}
+
+header a > img.img-fluid {
+    max-width: 10em;
+    padding: 1em;
+    height: auto;
+}
+
+header nav ul li.nav-item {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+header.navbar-scroll {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+nav a {
+    color: #222;
+    border-bottom: 1px solid #333;
+}
+
+nav a:hover {
+    border-bottom: 1px solid red;
+}
+
+nav a.active {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.parallax {
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    opacity: 1;
+    background-attachment: fixed;
+}
+
+.parallax-mot{
+    height: 1200px;
+}
+
+.parallax.parallax-1 {
+    background-image: url(../img/parallax2.JPG);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.parallax section {
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "h1 p"
+        "h1 p";
+    justify-items: start;
+    align-items: center;
+    grid-gap: 1em;
+}
+
+.parallax h1 {
+    color: #343a40;
+    text-align: center;
+    justify-self: end;
+    padding: 1%;
+    width: 50%;
+    border-radius: .5rem;
+    grid-area: h1;
+    font-size: 2.5em;
+}
+
+.parallax h1.rainbow-text-animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.parallax section > p {
+    grid-area: p;
+    justify-self: start;
+    color: #f8f9fa;
+    width: 60%;
+    height: 50%;
+    border-radius: .5rem;
+    text-align: justify;
+    padding: 2em;
+}
+
+.parallax.parallax-2 {
+    background-image: url(../img/parallax1.JPG);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.parallax.parallax-3 {
+    background-image: url(../img/parallax2.JPG);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.parallax.parallax-4 {
+    background-image: url(../img/parallax2.JPG);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.par-text {
+    color: #f8f9fa;
+    text-align: center;
+    padding: 1%;
+}
+
+.parallax-text h2 {
+    padding-top: 3rem;
+}
+
+.parallax-text-3 h2 {
+    padding: 3rem;
+}
+
+.parallax-4 form {
+    width: 25%;
+}
+
+.parallax-4 .fwider {
+    width: 40%;
+}
+
+.parallax-text ul {
+    width: 60%;
+    margin: auto;
+}
+
+.parallax-text i {
+    margin-top: 3rem;
+    font-size: 3em;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 1rem;
+    border-radius: 2em;
+}
+
+.parallax-text p {
+    padding-top: 1em;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.parallax form input {
+    width: 30em;
+}
+
+.parallax form .bdate select.form-control {
+    width: 8em;
+    display: inline;
+}
+
+div.bdate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallax form select.form-control.form-kat{
+    width: 30em;
+}
+
+div#form_Motyw {
+    margin: auto;
+    grid-gap: 1em;
+    padding-bottom: 1em;
+}
+
+.form_Motyw{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form_Motyw2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "duzy duzy maly1"
+        "duzy duzy maly2"
+        "maly3 maly4 maly5";   
+}
+
+.form-motyw-duzy{
+    grid-area: duzy;
+}
+
+.form_reg_3 .form-check {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+}
+
+.input-hidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#form_Motyw label{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.selected{
+    outline: 2px solid #f00;
+}
+
+.form_reg_3 .form-check img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 3em;
+    padding: 2em;
+    padding-bottom: 1em;
+}
+
+footer h3 {
+    justify-self: end;
+}
+
+footer img{
+    width: 30%;
+    margin: auto;
+}
+
+footer div img {
+    width: 50%;
+}
+
+footer p {
+    margin: auto;
+}
+
+footer div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-self: end;
+}
